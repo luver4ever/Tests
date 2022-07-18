@@ -8,12 +8,13 @@ public class PlayerMovement
     
     public PlayerMovement(Player player)
     {
+
         _player = player;
     }
 
-    public void Move(Vector2 delta, float repeatValue = 1)
+    public void Move(Vector2 delta)
     {
-        _player.MovePosition(delta, repeatValue);
+        _player.MovePosition(delta);
     }
     
 }

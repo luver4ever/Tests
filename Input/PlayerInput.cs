@@ -11,9 +11,9 @@ public class PlayerInput
         _movement = movement;
     }
 
-    public void Update(float deltaTime, float repeatValue = 1)
+    public void Update(float deltaTime)
     {
         var delta = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        _movement.Move(delta * deltaTime, repeatValue);
+        _movement.Move(delta * deltaTime);
     }
 }
